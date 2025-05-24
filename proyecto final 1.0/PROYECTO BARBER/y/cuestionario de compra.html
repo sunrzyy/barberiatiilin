@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compra - LOS TILINES BARBEROS</title>
+  <link rel="stylesheet" href="/cuestionario de compra .css">
+</head>
+
+<header>
+  <img src="/img/logo tilines.jpg" alt="Logo Barbería Los Tilines" width="80">
+  <nav>
+    <ul>
+      <li><a href="/tipos de corte.html">Tipos de Corte</a></li>
+      <hr>
+      <li><a href="/productos.html">Productos</a></li>
+      <hr>
+      <li><a href="/asesoramiento.html">Asesoramiento</a></li>
+      <hr>
+      <li><a href="/cuestionario.html">Reservar Cita</a></li>
+      <hr>
+    </ul>
+  </nav>
+</header>
+
+<h1>Rellena tus datos para continuar con la compra:</h1>
+
+<body>
+  <main>
+    <div class="form-container">
+      <h2>Compra tu Producto</h2>
+
+      <form id="compra-form" action="https://formsubmit.co/los.tilines.barberos@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+        <select name="producto" required>
+          <option value="" disabled selected>Selecciona un producto</option>
+          <option value="Cera para cabello">Cera para cabello</option>
+          <option value="Shampoo para barba">Shampoo para barba</option>
+          <option value="Aceite para barba">Aceite para barba</option>
+          <option value="Peine de madera">Peine de madera</option>
+        </select>
+
+        <input type="number" name="cantidad" placeholder="Cantidad" min="1" required>
+        <textarea name="direccion" placeholder="Dirección de envío completa" required></textarea>
+        <textarea name="nota" placeholder="Notas adicionales (opcional)"></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+        <button type="submit">Realizar Compra</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Barbería - "LOS TILINES". Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/barber_tilines" class="social-btn tiktok" target="_blank">
+        <i ></i> TikTok
+      </a>
+      <a href="https://www.instagram.com/barber_tilines" class="social-btn instagram" target="_blank">
+        <i ></i> Instagram
+      </a>
+      <a href="https://wa.me/986132499" class="social-btn whatsapp" target="_blank">
+        <i ></i> WhatsApp
+      </a>
+      <a href="https://www.google.com/maps/place/Barber%C3%ADa+Til%C3%ADn/" class="social-btn maps" target="_blank">
+        <i ></i> Ubicación
+      </a>
+    </div>
+  </footer>
+
+  <script src="cuestionariode.js"></script>
+</body>
+</html>
